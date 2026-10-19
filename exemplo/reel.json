@@ -1,0 +1,93 @@
+{
+  "slug": "exemplo",
+  "tema": "neon",
+  "cor": "ciano",
+  "titulo": "ESSE REEL SAIU | DE UM *TEXTO*",
+  "palavra": "KIT",
+  "destaques": ["texto", "roteiro", "voz", "3D"],
+  "dm": {
+    "texto": "Aqui está o *passo a passo* pra montar o seu.",
+    "botao": "abrir o guia"
+  },
+  "mascote": false,
+  "trilha": { "clima": "passo" },
+  "ritmo": { "max_vao": 1.4 },
+  "cenas": [
+    {
+      "tipo": "hook",
+      "fala": "Esse vídeo inteiro saiu de um arquivo de texto.",
+      "dados": {
+        "quadros": [
+          { "tipo": "palavra", "texto": "UM *VÍDEO*" },
+          { "tipo": "icone", "icone": "contexto", "rotulo": "arquivo", "em": "arquivo" }
+        ]
+      },
+      "batidas": [
+        { "tipo": "selo", "texto": "DE TEXTO", "em": "texto." }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "fala": "Você escreve o roteiro, grava a sua voz e o kit monta o resto.",
+      "dados": {
+        "itens": [
+          { "nome": "*Roteiro*", "desc": "você escreve", "icone": "mentoria", "em": "roteiro," },
+          { "nome": "*Voz*", "desc": "você grava", "icone": "conversa", "em": "voz" },
+          { "nome": "O *resto*", "desc": "o kit monta", "icone": "automacao", "em": "monta" }
+        ]
+      }
+    },
+    {
+      "tipo": "numero",
+      "fala": "São quatorze tipos de cena pra escolher.",
+      "dados": { "valor": 14, "rotulo": "tipos de *cena*", "em": "quatorze" },
+      "batidas": [
+        { "tipo": "selo", "texto": "PRA ESCOLHER", "em": "escolher." }
+      ]
+    },
+    {
+      "tipo": "mundo",
+      "fala": "E dá pra pôr uma cena 3D atrás de tudo, reagindo a cada palavra.",
+      "dados": {
+        "hud": [{ "rotulo": "cena", "valor": "*3D*", "em": "3D" }]
+      },
+      "batidas": [
+        { "tipo": "palavra", "texto": "*3D*", "em": "3D" },
+        { "tipo": "selo", "texto": "CADA PALAVRA", "em": "palavra.", "pos": "dir" }
+      ]
+    },
+    {
+      "tipo": "terminal",
+      "fala": "Um comando gera o MP4 com legenda e animação.",
+      "dados": {
+        "titulo": "terminal  ~/esteira-de-conteudo",
+        "linhas": [
+          { "k": "cmd", "t": "npm run exemplo" },
+          { "k": "out", "t": "7 cenas, legenda e animação", "em": "legenda" },
+          { "k": "ok", "t": "renders/exemplo.mp4", "em": "animação." }
+        ]
+      }
+    },
+    {
+      "tipo": "segue",
+      "fala": "Me segue pra ver mais,"
+    },
+    {
+      "tipo": "comenta",
+      "fala": "e comenta KIT que eu te mando o passo a passo.",
+      "dados": { "em": "comenta", "dm_em": "mando" },
+      "batidas": [
+        { "tipo": "anel", "em": "KIT" }
+      ]
+    }
+  ],
+  "mundo": {
+    "arquivo": "mundo.mjs",
+    "marcas": {
+      "entra": [3, "pôr"],
+      "tudo": [3, "tudo,"],
+      "reage": [3, "reagindo"],
+      "palavra": [3, "palavra."]
+    }
+  }
+}

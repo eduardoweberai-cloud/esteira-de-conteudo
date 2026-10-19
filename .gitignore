@@ -1,0 +1,24 @@
+node_modules/
+
+# saída do exemplo e dos reels
+exemplo/saida/
+renders/
+.hyperframes/
+snaps/
+
+# o seu trabalho: lotes (roteiros, gravações da sua voz, cópias de música e som em assets/ de cada reel),
+# vídeos entregues e a calibração da sua voz. Ficam só na sua máquina.
+lotes/
+entregas/
+voz/
+
+# segredos
+.env
+.env.*
+!.env.example
+
+# áudio de banco de som: a licença não deixa redistribuir o arquivo
+kit/assets/musica/*.mp3
+kit/assets/musica/*.wav
+kit/assets/sfx/*.mp3
+kit/assets/sfx/*.wav

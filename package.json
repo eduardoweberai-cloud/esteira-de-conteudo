@@ -1,0 +1,28 @@
+{
+  "name": "esteira-de-conteudo",
+  "version": "0.1.0",
+  "description": "Kit pra montar a sua esteira de reels com o Claude Code: roteiro, voz gravada e vídeo por código (HyperFrames).",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test kit/kit.test.mjs kit/build2.test.mjs kit/estilo.test.mjs kit/faixa.test.mjs kit/midia.test.mjs kit/mundokit.test.mjs kit/ritmo.test.mjs kit/versao.test.mjs kit/perfil.test.mjs kit/sons.test.mjs kit/chave.test.mjs kit/vozgravada.test.mjs kit/falalivre.test.mjs scripts/roteiro-md.test.mjs scripts/aprovacao.test.mjs scripts/esteira.test.mjs scripts/ritmo.test.mjs scripts/entrega.test.mjs",
+    "exemplo": "node scripts/exemplo.mjs",
+    "lote": "node scripts/lote.mjs",
+    "validar": "node scripts/validar-roteiro.mjs",
+    "gravar": "node scripts/gravar.mjs",
+    "voz": "node kit/voz-gravada.mjs",
+    "produzir": "node scripts/produzir.mjs",
+    "ritmo": "node scripts/medir-ritmo.mjs",
+    "entrega": "node scripts/entrega.mjs",
+    "kit": "node kit/build.mjs"
+  },
+  "dependencies": {
+    "gsap": "3.14.2",
+    "hyperframes": "0.8.177",
+    "three": "0.181.2"
+  }
+}
